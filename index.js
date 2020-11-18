@@ -43,7 +43,7 @@ const server = http.createServer((req,res) => {
     else{
         res.statusCode = 404;
         res.setHeader('Content-Type','text/html');
-        res.end('<html><body><h1>Error 404: '+req.method+' not supported file</h1></body></html>');
+        res.end('<html><body><h1>Error 404: '+req.method+' request not supported.</h1></body></html>');
         return;
     }
 })
